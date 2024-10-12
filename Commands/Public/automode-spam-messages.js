@@ -9,14 +9,14 @@ data : new  SlashCommandBuilder ()
 async execute (interaction , client) {
 
         if (!interaction.member.permissions.has(PermissionsBitField.Flags.ManageMessages) && !interaction.member.roles.cache.some((r) => r.name === "Deletes")) { return interaction.reply({ content: " <:1059649999086030938:1060645619292721225>  You dont have permissions (Manage messages) Or you dont have role that named (Deletes)", ephemeral: true }) }
-
+// Programmed by SLinder
 
 
 
 const {guild} = interaction ;
 
     
-
+// Programmed by SLinder
       
 
         const rule = await guild.autoModerationRules.create(
@@ -40,7 +40,7 @@ const {guild} = interaction ;
                         }
                     }
                 ]
-
+// Programmed by SLinder
             }).catch(async err => {
                
 console.log(err)
@@ -55,7 +55,7 @@ console.log(err)
             if (!rule) return;
 await interaction.deferReply({fetchReply : true })
           return   await interaction.editReply({ embeds: [embed] })
-   
+   // Programmed by SLinder
 
 
 
