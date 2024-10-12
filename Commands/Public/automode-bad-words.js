@@ -18,8 +18,8 @@ const word = options.getString('word')
 
         const rule = await guild.autoModerationRules.create(
             {
-                name: `Prevent  bad word by Reward Bot`,
-                creatorId: `1080118608451096666`,
+                name: `Prevent  bad word by AutoMod Bot`,
+                creatorId: `1169990814533963788`,
                 enabled: true,
                 eventType: 1,
                 triggerType: 1,
@@ -33,7 +33,7 @@ const word = options.getString('word')
                         metadata: {
                             channel: interaction.channel,
                             durationSeconds: 10,
-                            customMessage: `This message prevented by Reward Bot auto moderation`
+                            customMessage: `This message prevented by Bot auto moderation`
                         }
                     }
                 ]
