@@ -8,13 +8,13 @@ data : new  SlashCommandBuilder ()
 .addStringOption(option => option.setName('word').setDescription('remove messages suspected from re !! 🤦‍♂️').setRequired(true)),
 
 async execute (interaction , client) {
-
+// Programmed by SLinder
         if (!interaction.member.permissions.has(PermissionsBitField.Flags.ManageMessages) && !interaction.member.roles.cache.some((r) => r.name === "Deletes")) { return interaction.reply({ content: " <:1059649999086030938:1060645619292721225>  You dont have permissions (Manage messages) Or you dont have role that named (Deletes)", ephemeral: true }) }
 const {options , guild} = interaction ;
 
 const word = options.getString('word')
 
-
+// Programmed by SLinder
 
         const rule = await guild.autoModerationRules.create(
             {
@@ -41,7 +41,7 @@ const word = options.getString('word')
             }).catch(async err => {
                 
 console.log(err)
-               
+// Programmed by SLinder               
             })
 
         const embed = new EmbedBuilder()
@@ -53,6 +53,7 @@ console.log(err)
           
            return await interaction.editReply({ embeds: [embed] })
      
+// Programmed by SLinder
 
 
 
@@ -63,8 +64,7 @@ console.log(err)
 
 
 
-
-
+// Programmed by SLinder
 
 
 
