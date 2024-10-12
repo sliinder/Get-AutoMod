@@ -23,8 +23,8 @@ const {guild , options} = interaction ;
 
         const rule = await guild.autoModerationRules.create(
             {
-                name: `Prevent Spam mentions by Reward Bot`,
-                creatorId: `1080118608451096666`,
+                name: `Prevent Spam mentions by AutoMod Bot`,
+                creatorId: `1169990814533963788`,
                 enabled: true,
                 eventType: 1,
                 triggerType: 5,
@@ -38,7 +38,7 @@ const {guild , options} = interaction ;
                         metadata: {
                             channel: interaction.channel,
                             durationSeconds: 10,
-                            customMessage: `** This message prevented by Reward Bot auto moderation**`
+                            customMessage: `** This message prevented by Bot auto moderation**`
                         }
                     }
                 ]
@@ -51,7 +51,7 @@ console.log(err)
 
         const embed = new EmbedBuilder()
            
-            .setDescription(`**<a:emoji_186:1058153224051363910> your Automod Rule (spam mentions) has been created successfully ** `)
+            .setDescription(`**✔ your Automod Rule (spam mentions) has been created successfully ** `)
             .setTimestamp();
 
         
