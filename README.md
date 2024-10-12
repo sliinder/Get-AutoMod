@@ -1,6 +1,5 @@
 # Dev
-SLINDER
-
+**Author:** Ahmed `Slinder`  
 Discord: [_u6.](https://discord.com/users/1169990814533963788)
 
 YouTube: [slinder0](https://youtube.com/@slinder0?si=euLAXIy_dRDikhxd)  
