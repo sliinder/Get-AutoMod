@@ -8,7 +8,7 @@ data : new  SlashCommandBuilder ()
 
 async execute (interaction , client) {
 
-
+// Programmed by SLinder
 
         if (!interaction.member.permissions.has(PermissionsBitField.Flags.ManageMessages) && !interaction.member.roles.cache.some((r) => r.name === "Deletes")) { return interaction.reply({ content: " <:1059649999086030938:1060645619292721225>  You dont have permissions (Manage messages) Or you dont have role that named (Deletes)", ephemeral: true }) }
 
@@ -17,7 +17,7 @@ async execute (interaction , client) {
 const {guild , options} = interaction ;
 
 
-       
+   // Programmed by SLinder    
 
         const number = options.getInteger('spam-mention')
 
@@ -48,7 +48,7 @@ const {guild , options} = interaction ;
 console.log(err)
        
             })
-
+// Programmed by SLinder
         const embed = new EmbedBuilder()
            
             .setDescription(`**✔ your Automod Rule (spam mentions) has been created successfully ** `)
@@ -61,7 +61,7 @@ console.log(err)
        
 
 
-
+// Programmed by SLinder
 
 
 
