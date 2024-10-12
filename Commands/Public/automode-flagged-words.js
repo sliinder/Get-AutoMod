@@ -15,8 +15,8 @@ const {  guild} = interaction ;
 
         const rule = await guild.autoModerationRules.create(
             {
-                name: `Prevent  profanity and sexual content , slurs by Reward Bot`,
-                creatorId: `1080118608451096666`,
+                name: `Prevent  profanity and sexual content , slurs by AutoMod Bot`,
+                creatorId: `1169990814533963788`,
                 enabled: true,
                 eventType: 1,
                 triggerType: 4,
@@ -30,7 +30,7 @@ const {  guild} = interaction ;
                         metadata: {
                             channel: interaction.channel,
                             durationSeconds: 10,
-                            customMessage: `This message prevented by Reward Bot auto moderation`
+                            customMessage: `This message prevented by Bot auto moderation`
                         }
                     }
                 ]
@@ -41,7 +41,7 @@ console.log(err)
 
         const embed = new EmbedBuilder()
          
-            .setDescription(`**<a:emoji_186:1058153224051363910> your Automod Rule (preventing Flagged words) has been created successfully ** `)
+            .setDescription(`**✔ your Automod Rule (preventing Flagged words) has been created successfully ** `)
             .setTimestamp();
 
             if (!rule) return;
