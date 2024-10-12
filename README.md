@@ -1,5 +1,5 @@
 # Dev
-**SLINDER**
+SLINDER
 
 Discord: [_u6.](https://discord.com/users/1169990814533963788)
 
